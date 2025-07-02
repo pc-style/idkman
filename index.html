@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fish Rush 🐱🐟</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        #game-container {
+            border: 4px solid #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            background: #000;
+        }
+        
+        .game-title {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            z-index: 100;
+        }
+        
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-title">🐱 Cat Fish Rush 🐟</div>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+    </div>
+    <div class="controls">
+        Use ARROW KEYS to move • SPACEBAR to jump • Collect fish, avoid obstacles!
+    </div>
+    
+    <script src="https://unpkg.com/kaboom@3000.1.17/dist/kaboom.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

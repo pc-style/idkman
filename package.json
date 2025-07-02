@@ -1,0 +1,19 @@
+{
+  "name": "cat-fish-rush",
+  "version": "1.0.0",
+  "description": "A cute, fast-paced cat themed game built with Kaboom.js",
+  "main": "game.js",
+  "scripts": {
+    "start": "npx http-server -p 3000",
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {
+    "kaboom": "^3000.1.17"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["game", "cat", "kaboom", "javascript"],
+  "author": "Assistant",
+  "license": "MIT"
+}
